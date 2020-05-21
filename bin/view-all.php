@@ -12,32 +12,32 @@
         <script src="<?php echo $script;?>site-helper.js"></script>
         <script src="<?php echo $script;?>jquery.slimscroll.min.js"></script>
         <script src="<?php echo $script;?>jquery.unveil.js"></script>
-        
+
         <link href="<?php echo $css;?>style.css" rel="stylesheet" type="text/css" media="screen, projection">
         <link href="<?php echo $css;?>print-style.css" rel="stylesheet" type="text/css" media="print">
-            
+
         <link rel="icon" type="image/ico" href="<?php echo $favicon;?>home.ico"/>
-        
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        
+
         <div id="theme-bg"></div>
         <div id="theme-bg-tint"></div>
-        
-        
+
+
         <div id="header">
             <?php include $includes.'header.php';?>
         </div>
-        
+
         <div id="sidepanel">
            <?php include $includes.'sidepanel.php';?>
         </div>
-        
+
         <div id="content">
             <!---------------trending-songs---------------------------->
             <div id="post-trending">
-                <?php 
+                <?php
                     if(isset($_GET['action']) && !empty($_GET['action'])){
                         if($_GET['action']=="notifications"){
                 ?>
@@ -53,9 +53,9 @@
                     </span>
                 </div>
                 <div class="view-all-notification">
-                    
+
                     <div class="time">12 JULY 2016</div>
-                    
+
                     <div class="tab-style">
                         <a href="<?php echo $bin."my-channel.php";?>"><span class="cbold-color">Rett and Link</span></a> requested to add you as an artist for <a href="<?php echo $bin."song-info.php";?>"><span class="cbold-color">I am on vacation</span></a><span class="cbold"> 2 days ago</span>
                         <div class="quote">
@@ -74,9 +74,9 @@
                     <div class="tab-style">
                         <span class="cbold-color">Jassu Sharma</span> liked your song <a href="<?php echo $bin."song-info.php";?>"><span class="cbold-color">I'm textpert</span></a>.
                     </div>
-                    
+
                     <div class="time">11 JULY 2016</div>
-                    
+
                     <div class="tab-style">
                         <a href="<?php echo $bin."my-channel.php";?>"><span class="cbold-color">Rett and Link</span></a> requested to add you as an artist for <a href="<?php echo $bin."song-info.php";?>"><span class="cbold-color">I am on vacation</span></a><span class="cbold"> 2 days ago</span>
                         <div class="quote">
@@ -87,14 +87,14 @@
                             <button class="reject">Reject</button>
                         </div>
                     </div>
-                    
+
                 </div>
                 <?php
                         }
                         else
                         if($_GET['action']=="recent"){
                 ?>
-                
+
                  <div class="top-liked-post-title">
                     <span class="title-text">VIEW ALL
                         <span class="title-text-next">LAST ACTIVITIES</span>
@@ -107,7 +107,7 @@
                     </span>
                 </div>
                 <div class="view-all-recent">
-                    
+
                     <div class="time">12 JULY 2016</div>
 
                     <div class="tab-style">
@@ -133,7 +133,7 @@
                     <div class="tab-style">
                         <span>10:11 AM</span>You subscribed to "Rett and Link".
                     </div>
-                    
+
                 </div>
             <?php
                     }
@@ -147,7 +147,7 @@
                         </span>
                     </div>
                     <div id="get-song-element">
-                        
+
                         <?php for($i=1; $i<=5;$i++){?>
                         <div class="get-song-data">
                             <div class="get-song-size">
@@ -174,7 +174,7 @@
                         </div>
                         <div class="continue-button"><code>< </code>Continue adding</div>
                         <div class="checkout-button">Proceed to checkout ></div>
-                        
+
                     </div>
                 </div>
             <?php
@@ -189,7 +189,7 @@
                             <img src="<?php echo $icons."print.svg";?>"/>
                         </button>
                     </div>
-                    
+
                     <img src="<?php echo $logos;?>beatsniff.svg" alt="beatsniff" class="watermark"/>
 
                     <div class="company">
@@ -197,13 +197,10 @@
                             <img src="<?php echo $logos."beatsniff-by-atun.svg";?>"/>
                         </span>
                         <div class="company-addr">
-                            Sharma Niwas 
-                            c/o Sh. Devender Kumar Sharma <br/>
-                            Near NH - 205,
-                            Vill - Parhech <br/>
-                            PO - Ghanahatti
-                            Teh. & Distt. - Shimla<br/>
-                            171011
+                            Prime Minister office
+                            c/o Prime Minister <br/>
+                            Near NH - 1,<br/>
+                            India
                         </div>
                     </div>
                     <div class="invoice-addr">
@@ -258,12 +255,12 @@
                             </tr>
                         </table>
                     </div>
-                </div>        
+                </div>
             <?php
                     }
                     else{
             ?>
-                
+
                 <div id="account-statement">
                     <div class="header">
                         <div class="dp">
@@ -304,7 +301,7 @@
                                 <td>200.00</td>
                                 <td class="right">200.00</td>
                             </tr>
-                            
+
                             <tr>
                                 <td>10 May 2016</td>
                                 <td>
@@ -317,9 +314,9 @@
                                 <td>200.00</td>
                                 <td>-NIL-</td>
                                 <td class="right">0.00</td>
-                                
+
                             </tr>
-                            
+
                             <tr>
                                 <td>11 May 2016</td>
                                 <td>
@@ -383,16 +380,16 @@
             <?php
                 if(!$_GET['action']=="history"){ ?>
             <!---------------trending-channels------------------------>
-           
+
             <div id="post-trending-right">
                  <div class="top-liked-post-title">
                     <span class="title-text">CHANNELS
                         <span class="title-text-next">WORLD WIDE</span>
                     </span>
                 </div>
-                 
+
                 <div class="top-artist-post-elements">
-                    
+
                     <div class="chnl_subs">100 K<br/><span style="font-size:10px;">SUBS</span></div>
                     <div class="artist-dp">
                         <img src="<?php echo $icons;?>loading.gif" data-src="<?php echo $medium_profile_pics;?>randl200x200.jpg" id='image'/>
@@ -406,9 +403,9 @@
                         </div>
                     </div>
                 </div>
-                 
+
                 <div class="top-artist-post-elements">
-                    
+
                     <div class="chnl_subs">1 M<br/><span style="font-size:10px;">SUBS</span></div>
                     <div class="artist-dp">
                         <img src="<?php echo $icons;?>loading.gif" data-src="<?php echo $medium_profile_pics;?>sqcl200x200.jpg" id='image'/>
@@ -422,9 +419,9 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="top-artist-post-elements">
-                    
+
                     <div class="chnl_subs">54 K<br/><span style="font-size:10px;">SUBS</span></div>
                     <div class="artist-dp">
                         <img src="<?php echo $icons;?>loading.gif" data-src="<?php echo $medium_profile_pics;?>igyaan200x200.jpg" id='image'/>
@@ -438,19 +435,19 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
             <?php }?>
-            
+
         </div>
-        
+
         <div id="setting-popup" user-id="<?php echo 'xyz123';?>" page-id="subs">
             <div class="data" data-link="<?php echo $includes.'setting-popup.php';?>">
             <img src="<?php echo $icons;?>loading-black.gif" class="loading"/><br/>
             </div>
         </div>
-        
+
         <?php include $includes."footer.php";?>
-        
+
     </body>
 </html>
