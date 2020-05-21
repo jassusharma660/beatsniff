@@ -1,0 +1,286 @@
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
+{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0;padding:0;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+*{margin: 0;}
+a{text-decoration: none;}
+/*font includes */
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('../fonts/Nexa Light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+html,body{
+    font-family: 'Nexa';
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+    font-size: 12px;
+    letter-spacing: 0.9px;
+}
+a{
+    text-decoration: none;
+    color: #444;
+}
+.cbold{
+    font-weight: bold;
+    color: #444;
+}
+.cbold-h{
+    font-weight: bold;
+    color: #444;
+    display: block;
+    margin-top: 10px;
+}
+.cbold-p{
+    font-weight: bold;
+    display: block;
+    margin-left: 10%;
+}
+.cbold-color{
+    font-weight: bold;
+    color: #ff2b54;
+}
+/*---THEME BG----*/
+
+
+#theme-bg{
+    display: none;
+}
+#theme-bg-tint{
+    display: none;
+}
+
+/*-----HEADER-----*/
+
+
+#header{
+    display: none;
+}
+
+/*----SIDE PANEL--*/
+
+#sidepanel{
+    display: none;
+}
+/*-----ACCOUNT-STATEMENT-----*/
+#content{
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    padding: 0 30px;
+    position: absolute;
+    top: 13vh;
+}
+#content #account-statement{
+    width: 96%;
+    position: absolute;
+}
+#content #account-statement .header{
+    width: 100%;
+    height: 100px;
+}
+#content #account-statement .header .dp{
+    height: 50px;
+    display: inline-block;
+    float: left;
+}
+#content #account-statement .header .dp img{
+    background: #aaa;
+    height: 100%;
+}
+#content #account-statement .header .name{
+    width: 30%;
+    height: 50px;
+    display: inline-block;
+    float: left;
+    font-weight: bold;
+    overflow: hidden;
+}
+#content #account-statement .header .name span{
+    margin-left: 10px;
+    font-size: 20px;
+    display: inline-block;
+    color: #666;
+    position: relative;
+}
+#content #account-statement .header .amount img{
+    display: none;
+}
+#content #account-statement .header .amount{
+    width: 20%;
+    height: 50px;
+    float: right;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    color: #444;
+}
+#content #account-statement .header .amount .currency{
+    font-size: 15px;
+    position: absolute;
+    margin-left: 10px;
+    color: #999;
+}
+#content .watermark{
+    width: 80%;
+    position: fixed;
+    top: 20%;
+    margin: 0 auto;
+    opacity: 0.03;
+    transform: rotate(-20deg);
+    z-index: -10;
+}
+#content #account-statement .statement table{
+    width: 97%;
+    text-align: left;
+}
+#content #account-statement .statement table .right{
+    text-align: right;
+    padding-right: 5px;
+}
+#content #account-statement .statement table th{
+    font-weight: bold;
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+}
+#content #account-statement .statement table th,td{
+    padding-left: 10px;
+    height: 20px;
+    vertical-align: middle;
+}
+#content #account-statement .statement table .total{
+    background: none;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    color: #999;
+    border-top: 1px solid #888;
+}
+#content #account-statement .statement table .wallet{
+    color: #ff2b54;
+}
+#content #account-statement .star-note{
+    display: none;
+}
+/*---FOOTER---*/
+#footer{
+    display: none;
+}
+#print-button{
+    display: none;
+}
+@page{
+    size: auto;
+    margin: 0mm;
+}
+/*------INVOICE-------*/
+#content #invoice{
+    width: 96%;
+    position: absolute;
+}
+#content #invoice #print-button{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    float: right;
+}
+#content #invoice #print-button img{
+    height: 100%;
+}
+#content #invoice .company{
+    width: 100%;
+}
+#content #invoice .company .logo{
+    height: 60%;
+    display: inline-block;
+    margin-top: -40px;
+}
+#content #invoice .company .logo img{
+    height: 200px;
+}
+#content #invoice .company-addr{
+    width: 39%;
+    display: inline-block;
+    float: right;
+    color: #888;
+}
+#content #invoice .invoice-addr{
+    width: 100%;
+    display: inline-block;
+}
+#content #invoice .invoice-addr .addr{
+    display: inline-block;
+}
+#content #invoice .invoice-addr .head{
+    width: 60%;
+    margin: 15px 0;
+    font-size: 15px;
+    color: #000;
+    font-weight: bolder;
+}
+#content #invoice .invoice-detail{
+    width: 35%;
+    display: inline-block;
+    float: right;
+    color: #888;
+    margin-right: 40px;
+}
+#content #invoice .invoice-detail .head{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: -5px;
+    color: #222;
+}
+#content #invoice .invoice-detail table{
+    width: 100%;
+}
+#content #invoice .invoice-detail table td{
+    text-align: left;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+#content #invoice .invoice-detail table .th{
+    text-align: right;
+    font-weight: bolder;
+    color: #000;
+}
+#content #invoice .invoice-data{
+    width: 100%;
+    margin-top: 50px;
+}
+#content #invoice .invoice-data table{
+    width: 97%;
+}
+#content #invoice .invoice-data table th{
+    border: 1px solid #ccc;
+    height: 40px;
+    vertical-align: middle;
+    color: #000;
+    font-weight: bolder;
+}
+#content #invoice .invoice-data table td{
+    border: 1px solid #ccc;
+    height: 40px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+#content #invoice .invoice-data table .right{
+    text-align: right;
+    padding-right: 10px;
+}
+#content #invoice .invoice-data table .total{
+    font-weight: bolder;
+    color: #000;
+}
