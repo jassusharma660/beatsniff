@@ -1,7 +1,7 @@
 <p>
 <img width="20%" src="https://github.com/jassusharma660/beatsniff/blob/master/layout/images/logos/beatsniff-home.svg">  
 </p>   
-A digit music service.    
+An online music service.    
 
 ---  
 
