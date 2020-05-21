@@ -13,7 +13,5 @@ I uploaded this project here to show how far I came. Hope you'll like it.
 >**_NOTE:_** I have not planned any future updates for this project as making new music service is much easier than maintaining a 7-year-old project.
 
 
-To see a demo either click **see screenshots** on the follwing link or clone the repository.    
->It is better to setup XAMPP or WAMP for this project and navigate to the folder with index.php file   
-
-# [see screenshots](https://github.com/jassusharma660/beatsniff/blob/master/guide/README.md)
+To see a demo either click [**see screenshots**](https://github.com/jassusharma660/beatsniff/blob/master/guide/README.md) or clone the repository.    
+>You should setup XAMPP or WAMP for this project and navigate to the folder with index.php file   
